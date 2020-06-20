@@ -1,6 +1,6 @@
 # YARODS
-#### Yet Another Ruby On Docker Scaffolding
-
+### Yet Another Ruby On Docker Scaffolding
+---
 
 Basic outline for a ruby on docker image with associated services -- redis, sidekiq, postgres.  Based on [an excellent blog post](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development) by Vladimir Dementyev at Evil Martians.
 
@@ -12,7 +12,9 @@ Basic outline for a ruby on docker image with associated services -- redis, side
   * Add .env file, update versions as needed
   * Add to .dockerdev/Aptfile any additional dependencies you want available in the final image
   * `docker-compose build`
-  * `docker-compose run --rm runner` to get your command prompt and start developing
+  * `docker-compose run --rm --service-ports runner` to get your command prompt
+  * install rails (if desired)
+  * develop
 
 Add to .env file (in root folder) 
 ```
