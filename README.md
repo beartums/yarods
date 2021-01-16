@@ -23,9 +23,9 @@ POSTGRES_USER=<username>
 POSTGRES_PASSWORD=<password>
 ```
 
-Terminal prompt: `docker-compose --rm --service-ports runner`
+Terminal prompt: `docker-compose run --rm --service-ports runner`
 
-Rails server (once installed): `docker-compose --rm --service-ports rails`
+Rails server (once installed): `docker-compose run --rm --service-ports rails`
 
 Install rails (from terminal prompt -- see above):
 ```
