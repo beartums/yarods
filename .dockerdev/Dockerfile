@@ -60,6 +60,9 @@ ENV LANG=C.UTF-8 \
 RUN gem update --system && \
     gem install bundler:$BUNDLER_VERSION
 
+# copy the prynav shortcuts to the home directory incase you want to use pry nav
+# COPY .dockerdev/.pryrc /root
+
 # Create a directory for the app code
 RUN mkdir -p /app
 
